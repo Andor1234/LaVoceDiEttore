@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Copertina_style.css">
+    <title>Giornale</title>
+    <script>
+        let pagina = 1;
+        document.onscroll = function(){ 
+            var pos = getVerticalScrollPercentage(document.body)
+            if (pos == 0){
+                pagina = 1;
+            } 
+            if (pos == 100){
+                document.getElementById("pagina").style.backgroundColor = "rgb(69, 184, 69)";
+            }else{
+                document.getElementById("pagina").style.backgroundColor = "green";
+            }
+            if (pos == 99){
+                pagina = 19;
+            } 
+            if (pos == 93){
+                pagina = 18;
+            } 
+            if (pos == 87){
+                pagina = 17;
+            } 
+            if (pos == 81){
+                pagina = 16;
+            } 
+            if (pos == 75){
+                pagina = 15;
+            } 
+            if (pos == 71){
+                pagina = 14;
+            } 
+            if (pos == 66){
+                pagina = 13;
+            } 
+            if (pos == 60){
+                pagina = 12;
+            } 
+            if (pos == 52){
+                pagina = 11;
+            }
+            if (pos == 47){
+                pagina = 10;
+            }  
+            if (pos == 41){
+                pagina = 9;
+            }  
+            if (pos == 36){
+                pagina = 8;
+            }  
+            if (pos == 33){
+                pagina = 7;
+            }  
+            if (pos == 27){
+                pagina = 6;
+            }  
+            if (pos == 22){
+                pagina = 5;
+            }
+            if (pos == 16){
+                pagina = 4;
+            }  
+            if (pos == 10){
+                pagina = 3;
+            }  
+            if (pos == 6){
+                pagina = 2;
+            }       
+            if(Math.round(pos)> 4){
+                pagina
+            }
+            document.getElementById("pagina").innerHTML = pagina;
+}
+
+function getVerticalScrollPercentage( elm ){
+  var p = elm.parentNode
+  return (elm.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100
+}
+    </script>
+
+</head>
+<body>
+    <nav>
+            <ul id="navigation">
+                <li><img id="titoloimmagine" src="immagine-titolo.png" alt="err. titolo"></li>
+                <li><a href="redazione.html">Home</a></li>
+                <li><a href="">Podcast</a></li>
+                <li><a href="">Crediti</a></li>
+                <li style="height: 60px;width: 60px;float: right; padding: 0px;"><a href="https://www.instagram.com/lavocediettore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="instagram_logo_icon_181283.webp" alt="immagine non disponibile"></a></li>
+                <li style="height: 42px;width: 42px;float: right; padding: 7px 0px 0px 0px;"><a href="https://open.spotify.com/show/12IDpIYCO0IIWMIBSwitNZ?si=39f19439823f4d6d" target="_blank"><img src="spotify.png" alt="immagine non disponibile"></a></li>
+            </ul>
+        <ul>
+            <li><a href="Giornale.html" id="primaED">Prima edizione</a></li>
+            <li><a href="SecondaEdizione.html" id="secondaED">Seconda edizione</a></li>
+            </div>
+        </ul>
+        
+    </nav>
+    <span style="position: fixed; background-color: green;padding: 20px;color: white;border-radius: 100%;text-align: center;font-size: 25px;right: 60px;top: 87%; width: 70px;" id="pagina">1</span>
+                
+       
+        <div class="argomenti">
+        <!-- Seconda edizione giornale -->
+            <div class="giornale">
+                <div class="Saluti">
+                    <div class="grid">
+                        <div>
+                            <span>«C</span>arissimi studenti e studentesse,
+                            con grande gioia ed entusiasmo vi
+                            auguro un buon 2025!
+                            Ogni inizio rappresenta per tutti noi
+                            una nuova opportunità per crescere,
+                            apprendere e scoprire insieme.
+                            Questo è il momento perfetto per
+                            riflettere sugli obiettivi e sui buoni
+                            propositi che ci guideranno nel nostro
+                            percorso educativo.
+                            Sono certa che insieme potremo
+                            creare un ambiente scolastico
+                            positivo e stimolante, dove la
+                            curiosità e la voglia di sapere siano
+                            sempre al centro delle nostre attività.
+                            Vi incoraggio a impegnarvi in modo
+                            attivo, a partecipare alle attività
+                            proposte e a sostenerci a vicenda,
+                            perché possiamo raggiungere
+                            insieme traguardi straordinari!
+                            Quali possono essere, allora, dei
+                            buoni propositi per quest’anno? 
+                            <br><br>
+                            <b>Impegno nello studio</b>
+                            <br>
+                            Affrontiamo con determinazione e
+                            con curiosità ogni materia, ogni
+                            argomento, ricordando che ogni
+                            apprendimento è importante nel
+                            nostro percorso di crescita.
+                            <br><br>
+                            <b>Rispetto e inclusione</b>
+                            <br>
+                            Promuoviamo un clima di rispetto
+                            reciproco, accogliendo le diversità
+                            come una risorsa e valorizzando
+                            ognuno di noi per ciò che è. 
+                            <br><br>
+                            <b>Sostenibilità </b>
+                            <br>
+                            Impegniamoci a proteggere il nostro
+                            ambiente, adottando comportamenti
+                            eco-sostenibili e consapevoli. <br>
+                        </div>
+
+                        <div>
+                            <b>Creatività e innovazione</b>
+                            <br>
+                            Sfruttiamo la nostra creatività per
+                            affrontare le sfide in modo originale e
+                            innovativo, sia in classe che nei
+                            progetti extra-curriculari proposti.
+                            <br><br>
+                            <b>Collaborazione</b>
+                            <br>
+                            Lavoriamo insieme, creando sinergie
+                            tra studenti, insegnanti e famiglie, per
+                            costruire una comunità scolastica
+                            coesa e solidale.
+                            Sono certa che, con il vostro impegno
+                            e la vostra passione, questo sarà un
+                            anno ricco di successi e soddisfazioni.
+                            Non dimenticate che ogni piccolo
+                            passo conta e che il nostro viaggio è
+                            fatto anche delle esperienze condivise.
+                            Auguro a tutti voi un 2025 stimolante e
+                            gratificante, ricco di nuove scoperte e
+                            amicizie. Insieme, possiamo rendere la
+                            nostra scuola un luogo ancora
+                            migliore!<span>»</span>
+                            <br><br>
+                            <div class="Align">
+                                Con affetto,
+                                <br>
+                                La vostra Dirigente
+                                <br>
+                                <b>Michela Dall’Asta</b>
+                            </div>
+                            <br>
+                            <img src="Preside.png" alt="immagine non disponibile" style="box-shadow: 4px 4px 10px rgb(65, 65, 65); margin-top: 25px;">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="Ferragni">
+                    <h1>Pubblicità ingannevole? È il caso di rimettere i pandori a tavola!</h1>
+                    <div class="grid">
+                        <div>
+                            La Treccani ha appena inserito il termine
+                            "<span>Pandoro gate</span>" nei neologismi del 2024,
+                            tanta è stata la risonanza del <span>caso
+                            Balocco-Ferragni</span> sull'opinione pubblica.
+                            L'eco è arrivata anche alle orecchie del
+                            Sanfelice, rimbombando sempre più
+                            insistentemente in 4DU e 4EU, durante le
+                            lezioni di Diritto commerciale della prof.ssa
+                            Mariasole Porpora. Era il caso allora di
+                            vederci più chiaro, in mezzo a tutta quella
+                            nebbia di zucchero a velo…
+                            <br>
+                            <div class="Align">
+                                Introduzione della docente
+                                <br>
+                                <span>Mariasole Porpora</span>
+                            </div>
+                            <br><br>
+                            <b>L’inganno che ci porta ad acquistare</b>
+                            <br>
+                            in che modo la <span>pubblicità</span> può <span>ingannarci</span>,
+                            facendoci percepire <span>informazioni</span> distanti
+                            dalla realtà e portandoci a compiere acquisti
+                            che normalmente non faremmo? Può
+                            succedere davvero una cosa del genere?
+                            Questo articolo ci invita a ritornare su quei
+                            pandori zuccherati che abbiamo da poco
+                            messo da parte, dopo le festività natalizie,
+                            per dare una risposta a queste domande!
+                            <img src="Pandoro.png" alt="immagine non disponibile" style="box-shadow: 4px 4px 10px rgb(65, 65, 65); margin-top: 25px;">
+                            <br><br>
+                        </div>
+                        <div>
+                            <b>Un pandoro, un marchio</b>
+                            <br> 
+                            <b>e una donazione fantasma</b>
+                            <br>
+                            Nel <span>novembre</span> del <span>2022</span> la <span>Balocco</span> decide di 
+                            mettere in vendita un pandoro frutto di un 
+                            accordo di <span>merchandising</span> stipulato con 
+                            <span>Chiara Ferragni</span>. Ciò significa che l’azienda 
+                            paga per poter mettere il marchio 
+                            dell’influencer sui propri prodotti. E fino a 
+                            questo punto, nulla di male.
+                            L’operazione di vendita, però, viene 
+                            collegata ad una <span>donazione</span> da effettuare a 
+                            favore dell’<span>Ospedale Santa Margherita</span> di 
+                            <span>Torino</span>, in modo da sostenere la ricerca per i 
+                            <span>bambini ammalati</span>. Sia i comunicati stampa 
+                            che le stories di Chiara Ferragni fanno 
+                            intendere che la vendita del pandoro servirà 
+                            a finanziare questa donazione. 
+                            C’è un piccolo problema, però: la <span>donazione</span>
+                            era già avvenuta a <span>maggio 2022</span> e dunque 
+                            non ci sarebbe stata nessuna effettiva 
+                            correlazione tra la vendita del prodotto e il 
+                            fine benefico.
+                            Per di più, dalla documentazione ottenuta in 
+                            seguito dalle autorità è emerso che, almeno 
+                            nelle intenzioni della Balocco, il principale 
+                            obiettivo dell’operazione era “<span>svecchiare</span>” il 
+                            prodotto del pandoro, usando la <span>popolarità</span>
+                            di <span>Chiara Ferragni</span> come trampolino per 
+                            appellarsi ad un <span>pubblico più giovane</span>.
+                            Nonostante le premesse, l’operazione va a 
+                            buon fine e non sembra esserci nessuna 
+                            particolare complicazione per Balocco e 
+                            Chiara Ferragni, fino a quando all’<span>Antitrust</span>
+                            non iniziano ad arrivare <span>segnalazioni</span> che 
+                            lamentano l’ingannevolezza dell’operazione 
+                            da parte dell’<span>Associazione degli Utenti e dei 
+                            Servizi Radiotelevisivi.</span>
+                            Le indagini partono, si intensificano e nel 
+                            giugno del 2023 Balocco e le Società di 
+                            Chiara Ferragni vedono un procedimento 
+                            istruttorio avviato nei loro confronti.
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <b>L’intervento dell’Antitrust:</b>
+                            <br>
+                            <b>un inganno prevedibile?</b>
+                            <br>
+                            L’<span>Antitrust</span> ritiene scorretta l’operazione in
+                            quanto:
+                            - fornisce <span>informazioni fuorvianti</span> e non
+                            corrispondenti al vero al <span>consumatore</span>,
+                            facendogli compiere scelte che altrimenti
+                            non farebbe;
+                            - <span>omette</span> altre <span>informazioni rilevanti</span> di cui il
+                            consumatore medio ha bisogno per
+                            prendere una decisione.
+                            Il tutto è ovviamente riferito al metodo di
+                            promozione del prodotto, poiché i
+                            comunicati stampa, i cartigli apposti sulle
+                            confezioni e le promozioni tramite i social
+                            hanno fatto intendere che la vendita
+                            avrebbe finanziato una donazione, quando
+                            in realtà non era così.
+                            Lo stesso <span>prezzo</span> (circa il <span>doppio</span> di un
+                            normale prodotto) induceva i consumatori a
+                            ritenere che fosse giustificato dall’intento
+                            benefico.
+                            Inoltre troviamo un’<span>aggravante</span> nel fatto
+                            che, come risulta dalle documentazioni, il
+                            tema della pubblicità ingannevole era stato
+                            discusso dalle due parti, che durante la
+                            pianificazione della vendita parlavano di
+                            questo rischio, dimostrando dunque di
+                            essere a <span>conoscenza</span> della <span>scorrettezza</span>
+                            dell’<span>operazione</span>.
+                            Al termine del procedimento istruttorio, le
+                            Società di <span>Chiara Ferragni</span> sono state
+                            sanzionate per un totale di <span>1.075.000 €</span>,
+                            mentre <span>Balocco</span> ha subito una <span>sanzione</span> di
+                            <span>420.000 €</span>. La sanzione è stata così ingente
+                            in quanto le azioni delle due società erano
+                            intente ad ingannare il consumatore,
+                            facendo anche leva sulla loro sensibilità nei
+                            confronti dei bambini malati.
+                            <br>
+                            <br>
+                            <b>Cosa impariamo da questo scandalo?</b>
+                            <br>
+                            Ma noi che siamo i consumatori cosa
+                            guadagniamo da tutto ciò?
+                            Per noi, che siamo la parte lesa, in quanto
+                            ingannati e portati ad un acquisto che
+                            normalmente non avremmo fatto, cosa
+                            cambia dopo questo scandalo?
+                        </div>
+                        <div>
+                            Forse sul grande piano nulla, non porterà ad
+                            un cambiamento di regolamenti e del modo
+                            di fare pubblicità. Per un caso del genere che
+                            diventa di dominio pubblico, altri mille
+                            passano sotto traccia.
+                            Ma nel piccolo, noi possiamo imparare a
+                            prestare un po’ più <span>attenzione</span> ai nostri
+                            <span>acquisti</span> e a quello che ci viene
+                            <span>pubblicizzato</span>, poiché un maggiore grado di
+                            attenzione di sicuro porterà ad una
+                            diminuzione di casi del genere.
+                            <br><br>
+                            <div class="Align">
+                                Articolo di <span>Lorenzo Condina</span> (Classe <span>4DU</span>)
+                            </div>
+                            <img src="mangiona.png" alt="immagine non disponibile" style="box-shadow: 4px 4px 10px rgb(65, 65, 65); margin-top: 25px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="Bronx">
+                    <h1>I bravi artisti copiano, i grandi rubano: 
+                        come nacque e si sviluppò l’hip hop</h1>
+                    <div class="grid">
+                        <div>
+                            L’articolo che segue non è, almeno per me, 
+                            che la trascrizione di una delle tante 
+                            appassionate conversazioni tra la sua 
+                            autrice Mannat e il prof. Luigi, che poi sarei 
+                            io, sulla musica e il “grande sogno 
+                            americano”.
+                            Ascoltare queste storie, nella loro versione 
+                            originale e affatto edulcorata, è stato per 
+                            me divertente e coinvolgente ma, 
+                            soprattutto, un incredibile privilegio: tale 
+                            considero, infatti, il tempo speso con gli 
+                            studenti in un clima di sincera condivisione 
+                            delle proprie emozioni e dei propri sogni, 
+                            americani o meno che siano.
+                            <br>
+                            Introduzione del docente <span>Luigi Risolo</span>
+                            <br><br>
+                            <b>Gli yuppies e la Manhattan degli eccessi</b>
+                            <br>
+                            Il <span>sogno americano</span>, nel corso degli <span>anni
+                            Ottanta</span>, fu incarnato da una giovane e 
+                            disinibita generazione di <span>imprenditori</span> che, 
+                            forti dei loro studi presso <span>università</span>
+                            <span>prestigiose</span> come Yale, Harvard e Princeton, 
+                            seppero cavalcare mirabilmente quell’onda 
+                            di incredibili opportunità sollevata dalla 
+                            politica economica di <span>Ronald Reagan</span>
+                            (1981-1989).
+                            La loro Mecca era <span>New York</span>, ed in 
+                            particolare <span>Manhattan</span>. Durante il giorno 
+                            lavoravano ed investivano in borsa, la sera 
+                            frequentavano locali leggendari e 
+                            trasgressivi come lo <span>Studio 54</span>, dove era 
+                            facile imbattersi in <span>icone</span> della <span>cultura pop</span>
+                            come <span>Andy Warhol</span>, <span>Madonna</span> ed il suo 
+                            fidanzato <span>Jean Michel Basquiat</span>; qui 
+                            ballavano la musica dei <span>Duran Duran</span>, di 
+                            <span>Cindy Lauper</span> e di <span>Prince</span>, e si 
+                            abbandonavano ad eccessi di ogni tipo.
+                            <br><br>
+                            <b>Il Bronx e la nascita dell’hip hop</b>
+                            Ai margini di questo sogno, in quartieri come 
+                            il <span>Bronx</span> ed il <span>Queens</span>, vi era però un’America 
+                            che conosceva ambizioni e forme di 
+                            evasione decisamente più modeste: per 
+                            questa America <span>sopravvivere</span> alla propria
+                        </div>
+                        <div>
+                            <span>povertà</span> e <span>marginalità</span> costituiva, infatti, già
+                            un lusso. È però proprio qui, in queste aree
+                            urbane proletarie, lontane dall’abbagliante
+                            splendore del mondo degli yuppies, che
+                            nasce l’<span>hip hop</span>.
+                            Come l’avvento degli strumenti elettrici e
+                            della loro distorsione aveva reso possibile
+                            l’ascesa del <span>rock</span>, anche la nascita dell’hip
+                            hop fu determinata dalla diffusione, tra gli
+                            altri, di un nuovo “strumento”: il <span>sampler</span>.
+                            Il sampler, in italiano “<span>campionatore</span>”,
+                            permetteva di <span>isolare</span> e <span>riprodurre in loop</span> le
+                            sezioni più catchy di brani soul e r’n’b,
+                            fornendo così una <span>base ricca di groove</span> per
+                            le liriche e i reciproci insulti (dissing),
+                            improvvisati entrambi sul momento, di un
+                            genere del tutto nuovo di cantanti: i <span>rapper</span>
+                            (la parola <span>rap</span> sarebbe, secondo delle
+                            leggende, acronimo di espressioni come
+                            <span>‘rythm and poetry’</span> o <span>‘rock against polices’</span>,
+                            ma deriva in realtà dal verbo inglese <span>‘to rap’</span>,
+                            ‘chiacchierare’).
+                            <br><br>
+                            <b>Da fenomeno marginale a globale</b>
+                            <br>
+                            La <span>tecnologia</span> si sostituisce così al sapiente
+                            lavoro svolto fino ad allora dalle dita dei <span>DJ</span>
+                            sui dischi in vinile durante gli <span>house parties</span> e
+                            i <span>block parties</span> (rispettivamente, feste
+                            casalinghe e di quartiere). Il <span>fenomeno</span>,
+                            almeno inizialmente, è così <span>marginale</span> che
+                            non verrà sollevata neppure la questione dei
+                            diritti degli autori dei brani originali.
+                            Oggi però l’hip hop è diventato così
+                            <span>popolare</span> da riuscire a imporsi nelle
+                            classifiche di tutto il mondo e a svecchiare
+                            un festival ingessato e tradizionalista come
+                            <span>Sanremo</span> (sebbene la “versione” italiana
+                            raramente sia accostabile, per qualità e
+                            genuinità, al modello statunitense).
+                            Articolo di <span>Mannat Bhullar</span> (Classe <span>3AC</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="Wrapper">
+                    <h1>La musica nelle nostre orecchie:
+                        un sondaggio su Spotify Wrapped</h1>
+                    <div class="grid">
+                        <div>
+                            Come ogni anno, <span>Spotify</span> ha aperto il mese
+                            di dicembre condividendo con noi ascoltatori
+                            il <span>Wrapped</span>, ovvero il riassunto organizzato
+                            di cosa e quanto abbiamo ascoltato nel
+                            corso dell’anno appena passato, con tanto di
+                            <span>classifiche</span> dei nostri <span>artisti preferiti</span> e delle
+                            nostre <span>canzoni</span> più ascoltate. È un po’ il loro
+                            modo colorato e carino di farci sentire
+                            importanti, perché non vediamo l’ora di
+                            condividere la notizia che siamo la persona
+                            con più ascolti del nostro artista preferito,
+                            distraendoci dal fatto che, probabilmente,
+                            quell’artista ha guadagnato 50 centesimi dai
+                            nostri ascolti!
+                            <br><br>
+                            Ma più che altro, questo ha spinto noi della
+                            redazione del Sanfelice a porci una
+                            domanda: <span>cosa si ascolta nella nostra
+                            scuola</span>?
+                            Dopo aver chiesto ad un campione di <span>100
+                            studenti</span> di varie classi e plessi quale fosse il
+                            loro artista più ascoltato, abbiamo tratto
+                            alcune conclusioni.
+                        </div>
+                        <div>
+                            <b>La corsa verso il primo posto</b>
+                            <br>
+                            Le classifiche in sé e per sé lasciano un po’ il
+                            tempo che trovano: un po’ perché il mondo
+                            della musica è in costante cambiamento, e
+                            chi oggi ottiene un disco di platino domani
+                            potrebbe già essere considerato un fallito (e
+                            viceversa); un po’ perché la nostra si basa su
+                            un campione ristretto ad una sola scuola.
+                            Tradotto in parole povere: fare questo
+                            sondaggio in una scuola di Napoli o in una di
+                            Torino implica necessariamente risultati
+                            diversi! È interessante, però, vedere la
+                            quantità degli artisti che escono fuori dal
+                            sondaggio: su 100 persone intervistate, sono
+                            stati nominati 55 artisti diversi, spaziando in
+                            un range estremamente vario. Se vogliamo
+                            fare il gioco delle percentuali, il 56% degli
+                            artisti ha preso solo un voto, e l’83% al
+                            massimo due. Questo rivela che, per quanto
+                            la classifica ci mostri dei pezzi da 90 che
+                            inducono molte persone ad ascoltarle,
+                            ognuno di noi come ascoltatore rappresenta
+                            una piccola radio personale, in cui i nostri
+                        </div>
+                    </div>
+                    <img src="Data.png" alt="immagine non disponibile" style="box-shadow: 4px 4px 10px rgb(65, 65, 65); margin-top: 25px;">
+                    <br><br>
+                </div>
+                <div class="Wrapper">
+                    <div class="grid">
+                        <div>
+                            gusti, per quanto influenzati dalle tendenze e
+                            dai trend, rimangono un piccolo angolo in
+                            cui siamo liberi di essere noi stessi.
+                            <br><br>
+                            <b>Culture e controculture</b>
+                            <br>
+                            Vero, parlare nel 2024 di generi musicali è un
+                            po’ fuori luogo. Siamo nell’epoca delle
+                            contaminazioni e della sperimentazione,
+                            dove l’album dell’estate è di musica
+                            elettronica ed il rap diventa sperimentale
+                            mentre si mischia al gospel; in questo
+                            marasma, diventa difficile pensare ad una
+                            precisa categorizzazione della musica. Si
+                            rischia di diventare estremamente specifici,
+                            o di contro di incappare in un’eccessiva
+                            generalizzazione.
+                            Ma se dovessimo fare proprio questo, ovvero
+                            prendere ogni artista ed inserirlo in un’ampia
+                            categoria, che forma prenderebbe la nostra
+                            classifica?
+                            Innanzitutto, è bello vedere un’ampia varietà
+                            nelle risposte: si passa da rapper primi in
+                            classifica come Geolier a rappresentanti
+                            dell’indie come Calcutta, da leggende del
+                            pop come Michael Jackson a band metal
+                            come gli Avenged Sevenfold, attraversando
+                            reggaeton, musica underground, influenze
+                            elettroniche ed artisti di varie nazionalità.
+                        </div>
+                        <div>
+                            Ciò dimostra come ai giorni nostri, con la
+                            musica fruibile da tutti e che soprattutto può
+                            essere prodotta da tutti, ognuno può trovare
+                            il genere che lo rispecchia e che lo
+                            appassiona.
+                            Però è lampante come un genere dominante
+                            ci sia, ed è l’hip hop con i suoi sottogeneri, in
+                            particolare la trap, così nelle classifiche FIMI
+                            come nelle orecchie dei nostri alunni.
+                            E a proposito dei nostri alunni..
+                            <br><br>
+                            <b>Il timore dei giudizi</b>
+                            La reazione più comune alla domanda “chi è
+                            il tuo artista più ascoltato?” era inizialmente
+                            di stupore e di sorpresa, seguita quasi
+                            sempre da un po’ di vergogna e magari
+                            paura di essere giudicati. E noi vogliamo
+                            chiudere questo articolo con una nota forse
+                            un po’ sdolcinata e buonista, ma secondo noi
+                            importante.
+                            La musica è splendida appunto per la sua
+                            varietà, ed è veramente sbagliato provare
+                            vergogna per un’opinione o per un pensiero.
+                            Quindi, dal profondo del nostro cuore,
+                            godetevi la musica che vi piace, che sia
+                            dubstep, drill o black metal, e fregatevene se
+                            non è quello che gli altri ascoltano!
+                            <br><br>
+                            <div class="Align">
+                            Articolo di <span>Lorenzo Condina</span> (Classe <span>4DU</span>)
+                            </div>
+                        </div>
+                    </div>
+                    <img src="data_alunni.png" alt="immagine non disponibile" style="box-shadow: 4px 4px 10px rgb(65, 65, 65); margin-top: 25px;">
+                </div>
+                <hr>
+                <img src="memoria.png" alt="immagine non disponibile" style="box-shadow: 4px 4px 10px rgb(65, 65, 65); margin-top: 25px;">
+                <div class="Ebrei">
+                    <h1>Ricordare per non dimenticare.
+                        Una data, un monito, una promessa</h1>
+                    <div class="grid">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="margin-top: 30px;">
+            La voce di ettore <br>
+            Istituto Ettore Sanfelice Viadana
+        </footer>
+</body>
